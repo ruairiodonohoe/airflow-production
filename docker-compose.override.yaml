@@ -11,5 +11,5 @@ services:
     user: "0:1002"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    networks:
-      - airflow
+    #networks:
+     # - airflow
