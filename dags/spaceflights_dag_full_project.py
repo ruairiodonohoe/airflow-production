@@ -51,4 +51,4 @@ def spaceflights_full_project():
     )
 
 
-kedro_dag()
+spaceflights_full_project()

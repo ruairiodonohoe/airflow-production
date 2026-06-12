@@ -69,4 +69,4 @@ def spaceflights_pipelines():
     data_processing >> data_science
 
 
-kedro_dag()
+spaceflights_pipelines()
