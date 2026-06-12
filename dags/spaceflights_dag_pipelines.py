@@ -38,7 +38,7 @@ def spaceflights_pipelines():
 
     data_processing = DockerOperator(
         image=DOCKER_IMAGE,
-        task_id="run_project",
+        task_id="data_processing",
         command="kedro run --pipeline data_processing",
         docker_url="tcp://docker-proxy:2375",
         network_mode="bridge",
@@ -53,7 +53,7 @@ def spaceflights_pipelines():
 
     data_science = DockerOperator(
         image=DOCKER_IMAGE,
-        task_id="run_project",
+        task_id="data_science",
         command="kedro run --pipeline data_science",
         docker_url="tcp://docker-proxy:2375",
         network_mode="bridge",
