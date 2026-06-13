@@ -39,7 +39,6 @@ def spaceflights_full_project():
         image=DOCKER_IMAGE,
         task_id="run_project",
         command="kedro run",
-        docker_url="tcp://docker-proxy:2375",
         network_mode="bridge",
         mounts=[
             Mount(

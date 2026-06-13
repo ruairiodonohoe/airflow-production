@@ -40,7 +40,6 @@ def spaceflights_pipelines():
         image=DOCKER_IMAGE,
         task_id="data_processing",
         command="kedro run --pipeline data_processing",
-        docker_url="tcp://docker-proxy:2375",
         network_mode="bridge",
         mounts=[
             Mount(
@@ -55,7 +54,6 @@ def spaceflights_pipelines():
         image=DOCKER_IMAGE,
         task_id="data_science",
         command="kedro run --pipeline data_science",
-        docker_url="tcp://docker-proxy:2375",
         network_mode="bridge",
         mounts=[
             Mount(
