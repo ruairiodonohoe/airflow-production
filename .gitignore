@@ -12,3 +12,4 @@ airflow.cfg
 airflow.db
 logs/
 docker-compose.override.yaml
+docker-compose.override.yml
